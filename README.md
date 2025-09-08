@@ -37,32 +37,27 @@ pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
 
-Data Sources
+## Data Sources
+The London Smart Meters dataset from the UK:  
+🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london  
 
-The London Smart Meters dataset from the UK: https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
+- 5,567 London households  
+- Half-hourly energy readings (Nov 2011 – Feb 2014)  
+- Household metadata (ACORN groups)  
+- Weather data (temperature, humidity, etc.)  
+- UK bank holiday information  
 
-5,567 London households
+---
 
-Half-hourly energy readings (Nov 2011 – Feb 2014)
+## Technologies Used
+- **Python**, **Pandas**, **NumPy**, **Scikit-learn**  
+- **PyTorch & Darts** for deep learning forecasting  
+- **Matplotlib & Plotly** for visualization  
 
-Household metadata (ACORN groups)
+---
 
-Weather data (temperature, humidity, etc.)
+## Key Findings
+- **TSMixer Superiority**: Best accuracy (MSE ≈ 0.0008), but exhibited higher systematic bias.  
+- **LSTM Robustness**: Provided more stable forecasts across households.  
+- **Insights**: Household diversity and extreme events significantly affect prediction accuracy.  
 
-UK bank holiday information
-
-Technologies Used
-
-Python, Pandas, NumPy, Scikit-learn
-
-PyTorch & Darts for deep learning forecasting
-
-Matplotlib & Plotly for visualization
-
-Key findings:
-
-TSMixer Superiority: Best accuracy (MSE ≈ 0.0008), but exhibited higher systematic bias.
-
-LSTM Robustness: Provided more stable forecasts across households.
-
-Insights: Household diversity and extreme events significantly affect prediction accuracy.
