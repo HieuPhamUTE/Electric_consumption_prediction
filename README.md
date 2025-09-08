@@ -52,3 +52,9 @@ git clone https://github.com/HieuPhamUTE/Electric_consumption_prediction
 pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
+
+Result prediction between LSTM and TSMixer
+<img width="2993" height="1763" alt="tsmixer_matplotlib" src="https://github.com/user-attachments/assets/d940623a-82b2-42f3-bedf-d90f76d3fe0b" />
+<img width="2993" height="1763" alt="lstm_matplotlib" src="https://github.com/user-attachments/assets/f18da8d9-b34f-4dd2-b2d2-ae7bd8a8436f" />
+
+
