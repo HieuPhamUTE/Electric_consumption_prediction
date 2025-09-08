@@ -1,36 +1,50 @@
-⚡ Electric Consumption Prediction
-👥 Team Members
+# ⚡ Electric Consumption Prediction
 
-Pham Ngoc Hieu – 2430904
+## 👥 Team Members
+- **Pham Ngoc Hieu** – 2430904  
+- **Nguyen Nhat Phap** – 2430911  
+- **Instructor**: Ph.D. Bui Ha Duc – HCMUTE  
 
-Nguyen Nhat Phap – 2430911
+---
 
-Instructor: Ph.D. Bui Ha Duc – HCMUTE
+## 📌 Project Overview
+This project focuses on forecasting **household electricity consumption** using the **London Smart Meters dataset**.  
+We benchmark two advanced deep learning architectures:  
 
-📌 Project Overview
+- **LSTM (Long Short-Term Memory)** – Specialized recurrent neural network for sequential data.  
+- **TSMixer** – A modern architecture for capturing complex temporal dependencies.  
 
-This project aims to forecast household electricity consumption using the London Smart Meters dataset.
-We benchmark two advanced deep learning models:
+### 🔑 Features
+- **Deep Learning Models**: LSTM and TSMixer implemented via **Darts (PyTorch backend)**  
+- **Data Processing**: Automated pipeline for missing value imputation, feature engineering, and scaling  
+- **Exploratory Data Analysis**: Detect patterns, seasonality, and correlations in energy data  
+- **Evaluation Metrics**: MSE, RMSE, MAE, and Forecast Bias  
+- **Scalable Design**: Works across multiple households with diverse consumption behaviors  
 
-LSTM (Long Short-Term Memory) – A recurrent neural network well-suited for sequential data.
+### 📂 Data Sources
+Dataset: **London Smart Meters**  
+🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london  
 
-TSMixer – A recent architecture designed to capture complex temporal dependencies.
+- 5,567 London households  
+- Half-hourly readings (Nov 2011 – Feb 2014)  
+- Household metadata (ACORN groups)  
+- Weather variables (temperature, humidity, etc.)  
+- UK public holidays  
 
-The objective is to determine which model provides more accurate and reliable predictions for household energy usage.
+### 🛠️ Technologies
+- **Python**, **Pandas**, **NumPy**, **Scikit-learn**  
+- **PyTorch & Darts** (deep learning forecasting)  
+- **Matplotlib & Plotly** (visualization)  
 
-🔑 Features
+### 📊 Key Findings
+- **TSMixer**: Best accuracy (**MSE ≈ 0.0008**) but introduced higher systematic bias  
+- **LSTM**: Provided more stable forecasts across households  
+- **Insights**: Household diversity and extreme events strongly affect forecasting performance  
 
-Deep Learning Models: LSTM and TSMixer implemented via Darts (PyTorch backend).
+---
 
-Data Processing: Automated pipeline including missing value imputation, feature engineering, and scaling.
-
-Exploratory Data Analysis: Identification of consumption patterns, seasonality, and correlations.
-
-Evaluation Metrics: MSE, RMSE, MAE, and Forecast Bias.
-
-Scalable Design: Adaptable for large-scale multi-household energy forecasting.
-
-⚙️ Installation
+## ⚙️ Installation
+```bash
 # Clone the repository
 git clone https://github.com/HieuPhamUTE/Electric_consumption_prediction
 
@@ -38,34 +52,3 @@ git clone https://github.com/HieuPhamUTE/Electric_consumption_prediction
 pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
-
-📂 Data Sources
-
-We use the London Smart Meters dataset:
-🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
-
-5,567 households in London
-
-Half-hourly electricity readings (Nov 2011 – Feb 2014)
-
-Household metadata (ACORN groups)
-
-Weather data (temperature, humidity, etc.)
-
-UK public holidays
-
-🛠️ Technologies
-
-Programming & Data: Python, Pandas, NumPy, Scikit-learn
-
-Deep Learning: PyTorch, Darts
-
-Visualization: Matplotlib, Plotly
-
-📊 Key Findings
-
-TSMixer achieved the best accuracy (MSE ≈ 0.0008), though results showed higher systematic bias.
-
-LSTM produced more stable predictions across diverse households.
-
-Insights: Household heterogeneity and extreme weather/events significantly impact forecasting performance.
