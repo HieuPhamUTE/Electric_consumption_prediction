@@ -37,7 +37,7 @@ Dataset: **London Smart Meters**
 - **Matplotlib & Plotly** (visualization)  
 
 ### 📊 Key Findings
-- **TSMixer**: Best accuracy (**MSE ≈ 0.0008**) but introduced higher systematic bias  
+- **TSMixer**: Best accuracy (**MSE ≈ 0.0005**) but introduced higher systematic bias  
 - **LSTM**: Provided more stable forecasts across households  
 - **Insights**: Household diversity and extreme events strongly affect forecasting performance  
 
