@@ -37,6 +37,8 @@ pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
 
+---
+
 ## Data Sources
 The London Smart Meters dataset from the UK:  
 🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london  
