@@ -53,15 +53,6 @@ pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
 
-## 📈 Results Visualization
-
-### 🔹 Result prediction between LSTM and TSMixer
-
-**TSMixer Forecast**  
-![TSMixer Forecast](https://github.com/user-attachments/assets/b6ced161-1299-4fbc-986f-a131a595bb5e)
-
-**LSTM Forecast**  
-![LSTM Forecast](https://github.com/user-attachments/assets/4f5c8b84-201b-457b-a9e6-69b39c83b919)
 
 
 
