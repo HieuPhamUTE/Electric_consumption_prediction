@@ -1,35 +1,37 @@
-# Electric Consumption Prediction
+⚡ Electric Consumption Prediction
+👥 Team Members
 
-## Team Members
-- **Student 1**: Pham Ngoc Hieu - 2430904  
-- **Student 2**: Nguyen Nhat Phap - 2430911  
-- **Instructor**: Ph.D Bui Ha Duc - HCMUTE  
+Pham Ngoc Hieu – 2430904
 
----
+Nguyen Nhat Phap – 2430911
 
-## Project Overview
-This project focuses on forecasting **household energy consumption** using the **London Smart Meters dataset**.  
-We evaluate two state-of-the-art deep learning architectures:  
+Instructor: Ph.D. Bui Ha Duc – HCMUTE
 
-- **LSTM (Long Short-Term Memory)**: Specialized recurrent neural network for sequential data.  
-- **TSMixer**: Modern deep learning model designed for capturing complex temporal dependencies.  
+📌 Project Overview
 
-The goal is to identify which architecture is more effective for residential energy consumption forecasting.
+This project aims to forecast household electricity consumption using the London Smart Meters dataset.
+We benchmark two advanced deep learning models:
 
----
+LSTM (Long Short-Term Memory) – A recurrent neural network well-suited for sequential data.
 
-## Features
-- **Deep Learning Models**: LSTM and TSMixer implemented with Darts (PyTorch backend).  
-- **Data Processing**: Automated pipeline for missing value imputation, feature engineering, and scaling.  
-- **Exploratory Data Analysis**: Visualization of patterns, seasonality, and correlations in energy data.  
-- **Performance Evaluation**: Metrics include MSE, RMSE, MAE, and Forecast Bias.  
-- **Scalable Architecture**: Can handle multiple households with diverse consumption behaviors.  
+TSMixer – A recent architecture designed to capture complex temporal dependencies.
 
----
+The objective is to determine which model provides more accurate and reliable predictions for household energy usage.
 
-## Installation
-```bash
-# Clone this repository
+🔑 Features
+
+Deep Learning Models: LSTM and TSMixer implemented via Darts (PyTorch backend).
+
+Data Processing: Automated pipeline including missing value imputation, feature engineering, and scaling.
+
+Exploratory Data Analysis: Identification of consumption patterns, seasonality, and correlations.
+
+Evaluation Metrics: MSE, RMSE, MAE, and Forecast Bias.
+
+Scalable Design: Adaptable for large-scale multi-household energy forecasting.
+
+⚙️ Installation
+# Clone the repository
 git clone https://github.com/HieuPhamUTE/Electric_consumption_prediction
 
 # Install dependencies
@@ -37,29 +39,33 @@ pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
 
----
+📂 Data Sources
 
-## Data Sources
-The London Smart Meters dataset from the UK:  
-🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london  
+We use the London Smart Meters dataset:
+🔗 https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
 
-- 5,567 London households  
-- Half-hourly energy readings (Nov 2011 – Feb 2014)  
-- Household metadata (ACORN groups)  
-- Weather data (temperature, humidity, etc.)  
-- UK bank holiday information  
+5,567 households in London
 
----
+Half-hourly electricity readings (Nov 2011 – Feb 2014)
 
-## Technologies Used
-- **Python**, **Pandas**, **NumPy**, **Scikit-learn**  
-- **PyTorch & Darts** for deep learning forecasting  
-- **Matplotlib & Plotly** for visualization  
+Household metadata (ACORN groups)
 
----
+Weather data (temperature, humidity, etc.)
 
-## Key Findings
-- **TSMixer Superiority**: Best accuracy (MSE ≈ 0.0008), but exhibited higher systematic bias.  
-- **LSTM Robustness**: Provided more stable forecasts across households.  
-- **Insights**: Household diversity and extreme events significantly affect prediction accuracy.  
+UK public holidays
 
+🛠️ Technologies
+
+Programming & Data: Python, Pandas, NumPy, Scikit-learn
+
+Deep Learning: PyTorch, Darts
+
+Visualization: Matplotlib, Plotly
+
+📊 Key Findings
+
+TSMixer achieved the best accuracy (MSE ≈ 0.0008), though results showed higher systematic bias.
+
+LSTM produced more stable predictions across diverse households.
+
+Insights: Household heterogeneity and extreme weather/events significantly impact forecasting performance.
