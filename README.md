@@ -57,11 +57,12 @@ pip install jupyter ipywidgets
 
 ### 🔹 Result prediction between LSTM and TSMixer
 
-**TSMixer Forecast**
-<img width="100%" alt="tsmixer_matplotlib" src="https://github.com/user-attachments/assets/b6ced161-1299-4fbc-986f-a131a595bb5e" />
+**TSMixer Forecast**  
+![TSMixer Forecast](https://github.com/user-attachments/assets/b6ced161-1299-4fbc-986f-a131a595bb5e)
 
-**LSTM Forecast**
-<img width="100%" alt="lstm_matplotlib" src="https://github.com/user-attachments/assets/4f5c8b84-201b-457b-a9e6-69b39c83b919" />
+**LSTM Forecast**  
+![LSTM Forecast](https://github.com/user-attachments/assets/4f5c8b84-201b-457b-a9e6-69b39c83b919)
+
 
 
 
