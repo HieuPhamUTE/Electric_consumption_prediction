@@ -30,10 +30,39 @@ The goal is to identify which architecture is more effective for residential ene
 ## Installation
 ```bash
 # Clone this repository
-git clone https://github.com/HienNguyen2311/london-energy-forecasting.git
-cd london_smart_meters
+git clone https://github.com/HieuPhamUTE/Electric_consumption_prediction
 
 # Install dependencies
 pip install pandas numpy scikit-learn plotly missingno tqdm
 pip install darts torch
 pip install jupyter ipywidgets
+
+Data Sources
+
+The London Smart Meters dataset from the UK: https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london
+
+5,567 London households
+
+Half-hourly energy readings (Nov 2011 – Feb 2014)
+
+Household metadata (ACORN groups)
+
+Weather data (temperature, humidity, etc.)
+
+UK bank holiday information
+
+Technologies Used
+
+Python, Pandas, NumPy, Scikit-learn
+
+PyTorch & Darts for deep learning forecasting
+
+Matplotlib & Plotly for visualization
+
+Key findings:
+
+TSMixer Superiority: Best accuracy (MSE ≈ 0.0008), but exhibited higher systematic bias.
+
+LSTM Robustness: Provided more stable forecasts across households.
+
+Insights: Household diversity and extreme events significantly affect prediction accuracy.
